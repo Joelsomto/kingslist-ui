@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-startbar="light" data-bs-theme="light">
+
+    <head>
+        
+
+        <meta charset="utf-8" />
+                <title>Dispatch Log | Kingslist</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+                <meta content="" name="author" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+                <!-- App favicon -->
+                <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+       
+
+         <!-- App css -->
+         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+         <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+         <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    
+    <!-- Top Bar Start -->
+    <body>
+        <!-- Top Bar Start -->
+          <div id="topBar-placeholder"></div>
+
+    <script>
+    fetch('components/topbar.html')
+        .then(res => res.text())
+        .then(html => {
+        document.getElementById('topBar-placeholder').innerHTML = html;
+        });
+    </script>
+        <!-- Top Bar End -->
+        <!-- leftbar-tab-menu -->
+       <div id="leftbar-placeholder"></div>
+
+    <script>
+    fetch('components/leftbar.html')
+        .then(res => res.text())
+        .then(html => {
+        document.getElementById('leftbar-placeholder').innerHTML = html;
+        });
+    </script>
+        <!-- end leftbar-tab-menu-->
+
+
+        <div class="page-wrapper">
+
+            <!-- Page Content-->
+            <div class="page-content">
+                <div class="container-xxl">
+                    
+            <div class="row justify-content-center">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h4 class="card-title mb-0">Dispatch Logs</h4>
+                <a href="http://localhost/kingslist/new_ui_v2/dispatch-report.html" class="btn btn-sm btn-primary">
+                    <i class="icofont-eye-alt"></i> Check Logs
+                </a>
+            </div>
+            <div class="card-body pt-0">
+                <div class="table-responsive">
+                    <table class="table table-hover mb-0 table-centered align-middle">
+                        <thead class="table">
+                            <tr>
+                                <th>Username</th>
+                                <th>Full Name</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="https://ui-avatars.com/api/?name=jsmith&background=0d6efd&color=fff&size=40" alt="avatar" class="rounded-circle me-2" width="40">
+                                    <span class="fw-medium">@jsmith</span>
+                                </td>
+                                <td>John Smith</td>
+                                <td><span class="badge bg-success">Delivered</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="https://ui-avatars.com/api/?name=amarcus&background=6610f2&color=fff&size=40" alt="avatar" class="rounded-circle me-2" width="40">
+                                    <span class="fw-medium">@amarcus</span>
+                                </td>
+                                <td>Ava Marcus</td>
+                                <td><span class="badge bg-warning">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="https://ui-avatars.com/api/?name=tlee&background=198754&color=fff&size=40" alt="avatar" class="rounded-circle me-2" width="40">
+                                    <span class="fw-medium">@tlee</span>
+                                </td>
+                                <td>Tom Lee</td>
+                                <td><span class="badge bg-danger">Failed</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>          
+            </div> 
+        </div>
+    </div> 
+</div>
+
+
+                    
+                </div><!-- container -->
+                <!--Start Rightbar-->
+                
+                <!--Start Footer-->
+                
+                                 <div id="footer-placeholder"></div>
+
+    <script>
+    fetch('components/footer.html')
+        .then(res => res.text())
+        .then(html => {
+        document.getElementById('footer-placeholder').innerHTML = html;
+        });
+    </script>
+                
+                <!--end footer-->
+            </div>
+            <!-- end page content -->
+        </div>
+        <!-- end page-wrapper -->
+
+        <!-- Javascript  -->  
+        <!-- vendor js -->
+        
+        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/libs/simplebar/simplebar.min.js"></script>
+
+        <script src="assets/js/app.js"></script>
+    </body>
+    <!--end body-->
+</html>

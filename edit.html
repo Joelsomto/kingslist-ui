@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-startbar="light" data-bs-theme="light">
+
+    <head>
+        
+
+        <meta charset="utf-8" />
+                <title>Edit List | Kingslist</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+                <meta content="" name="author" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+                <!-- App favicon -->
+                <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+       
+        <link href="assets/libs/simple-datatables/style.css" rel="stylesheet" type="text/css" />
+         <!-- App css -->
+         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+         <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+         <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    
+    <!-- Top Bar Start -->
+    <body>
+        <!-- Top Bar Start -->
+          <div id="topBar-placeholder"></div>
+
+    <script>
+    fetch('components/topbar.html')
+        .then(res => res.text())
+        .then(html => {
+        document.getElementById('topBar-placeholder').innerHTML = html;
+        });
+    </script>
+        <!-- Top Bar End -->
+        <!-- leftbar-tab-menu -->
+         <div id="leftbar-placeholder"></div>
+
+    <script>
+    fetch('components/leftbar.html')
+        .then(res => res.text())
+        .then(html => {
+        document.getElementById('leftbar-placeholder').innerHTML = html;
+        });
+    </script>
+        <!-- end leftbar-tab-menu-->
+
+
+        <div class="page-wrapper">
+
+            <!-- Page Content-->
+            <div class="page-content">
+                <div class="container-xxl">
+                    
+                        
+
+                    <div class="row justify-content-center">
+    <div class="col-12">
+        <div class="card shadow-lg border-0">
+            <div class="card-header bg-light d-flex justify-content-between align-items-center">
+                <div>
+                    <h4 class="card-title mb-0">Edit List (Grace)</h4>
+                    <small class="text-muted">Total: <strong>279 Recipients</strong></small>
+                </div>
+                <div>
+                    <a href="dispatch.html" class="btn btn-sm btn-success me-2"><i class="icofont-paper-plane"></i> Dispatch</a>
+                </div>
+            </div><!--end card-header-->
+
+            <div class="card-body pt-0">
+                <!-- Search Input -->
+<div class="mb-3 d-flex align-items-center gap-2 flex-wrap">
+    <input type="text" id="searchInput" class="form-control w-75" placeholder="Search by name or handle...">
+    <a href="#" class="btn btn-sm btn-success">
+        <i class="icofont-search"></i> Click to Search
+    </a>
+    <a href="#" class="btn btn-sm btn-outline-primary">
+        <i class="icofont-upload"></i> Import
+    </a>
+</div>
+
+
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle table-bordered" id="recipientTable">
+                        <thead class="table-light">
+                            <tr>
+                                <th>#</th>
+                                <th>KingsChat Handle</th>
+                                <th>Full Name</th>
+                                <th>Profile URL</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><span class="badge bg-primary">Grace</span></td>
+                                <td>Grace Ojo</td>
+                                <td><a href="https://kingschat.com/u/Grace" target="_blank">View Profile</a></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><span class="badge bg-secondary">DanielK</span></td>
+                                <td>Daniel King</td>
+                                <td><a href="https://kingschat.com/u/DanielK" target="_blank">View Profile</a></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><span class="badge bg-dark">Mabel23</span></td>
+                                <td>Mabel Johnson</td>
+                                <td><a href="https://kingschat.com/u/Mabel23" target="_blank">View Profile</a></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><span class="badge bg-info text-dark">Kenny_G</span></td>
+                                <td>Kenneth George</td>
+                                <td><a href="https://kingschat.com/u/Kenny_G" target="_blank">View Profile</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>          
+            </div><!--end card-body--> 
+        </div><!--end card--> 
+    </div> <!--end col-->                                                       
+</div><!--end row-->  
+
+<!-- Simple Search Script -->
+<script>
+    document.getElementById("searchInput").addEventListener("keyup", function () {
+        const searchValue = this.value.toLowerCase();
+        const rows = document.querySelectorAll("#recipientTable tbody tr");
+
+        rows.forEach(row => {
+            const handle = row.cells[1].innerText.toLowerCase();
+            const name = row.cells[2].innerText.toLowerCase();
+            row.style.display = (handle.includes(searchValue) || name.includes(searchValue)) ? "" : "none";
+        });
+    });
+</script>
+                                 
+                </div><!-- container -->
+                <!--Start Rightbar-->
+                <!--Start Rightbar/offcanvas-->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="Appearance" aria-labelledby="AppearanceLabel">
+                    <div class="offcanvas-header border-bottom justify-content-between">
+                      <h5 class="m-0 font-14" id="AppearanceLabel">Appearance</h5>
+                      <button type="button" class="btn-close text-reset p-0 m-0 align-self-center" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">  
+                        <h6>Account Settings</h6>
+                        <div class="p-2 text-start mt-3">
+                            <div class="form-check form-switch mb-2">
+                                <input class="form-check-input" type="checkbox" id="settings-switch1">
+                                <label class="form-check-label" for="settings-switch1">Auto updates</label>
+                            </div><!--end form-switch-->
+                            <div class="form-check form-switch mb-2">
+                                <input class="form-check-input" type="checkbox" id="settings-switch2" checked>
+                                <label class="form-check-label" for="settings-switch2">Location Permission</label>
+                            </div><!--end form-switch-->
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="settings-switch3">
+                                <label class="form-check-label" for="settings-switch3">Show offline Contacts</label>
+                            </div><!--end form-switch-->
+                        </div><!--end /div-->
+                        <h6>General Settings</h6>
+                        <div class="p-2 text-start mt-3">
+                            <div class="form-check form-switch mb-2">
+                                <input class="form-check-input" type="checkbox" id="settings-switch4">
+                                <label class="form-check-label" for="settings-switch4">Show me Online</label>
+                            </div><!--end form-switch-->
+                            <div class="form-check form-switch mb-2">
+                                <input class="form-check-input" type="checkbox" id="settings-switch5" checked>
+                                <label class="form-check-label" for="settings-switch5">Status visible to all</label>
+                            </div><!--end form-switch-->
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="settings-switch6">
+                                <label class="form-check-label" for="settings-switch6">Notifications Popup</label>
+                            </div><!--end form-switch-->
+                        </div><!--end /div-->               
+                    </div><!--end offcanvas-body-->
+                </div>
+                <!--end Rightbar/offcanvas-->
+                <!--end Rightbar-->
+                <!--Start Footer-->
+                
+                 <div id="footer-placeholder"></div>
+
+    <script>
+    fetch('components/footer.html')
+        .then(res => res.text())
+        .then(html => {
+        document.getElementById('footer-placeholder').innerHTML = html;
+        });
+    </script>
+                <!--end footer-->
+            </div>
+            <!-- end page content -->
+        </div>
+        <!-- end page-wrapper -->
+
+        <!-- Javascript  -->  
+        <!-- vendor js -->
+        
+        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/libs/simplebar/simplebar.min.js"></script>
+
+        <script src="assets/libs/simple-datatables/umd/simple-datatables.js"></script>
+        <script src="assets/js/pages/datatable.init.js"></script>  
+
+        <script src="assets/js/app.js"></script>
+       
+    </body>
+    <!--end body-->
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-startbar="light" data-bs-theme="light">
+
+<head>
+    
+
+    <meta charset="utf-8" />
+            <title>Kingslist |  Dashboard </title>
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+            <meta content="" name="author" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+            <!-- App favicon -->
+            <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+       
+
+    <link rel="stylesheet" href="assets/libs/jsvectormap/css/jsvectormap.min.css">
+
+     <!-- App css -->
+     <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+     <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+     <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+    <!-- Top Bar Start -->
+     <div id="topBar-placeholder"></div>
+
+    <script>
+    fetch('components/topbar.html')
+        .then(res => res.text())
+        .then(html => {
+        document.getElementById('topBar-placeholder').innerHTML = html;
+        });
+    </script>
+
+    
+    <!-- Top Bar End -->
+    <!-- leftbar-tab-menu -->
+ <div id="leftbar-placeholder"></div>
+
+    <script>
+    fetch('components/leftbar.html')
+        .then(res => res.text())
+        .then(html => {
+        document.getElementById('leftbar-placeholder').innerHTML = html;
+        });
+    </script>
+    <!--end startbar-->
+
+    <!-- end leftbar-tab-menu-->
+
+    <div class="page-wrapper">
+
+        <!-- Page Content-->
+        <div class="page-content">
+            <div class="container-xxl">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row d-flex justify-content-center border-dashed-bottom pb-3">
+                                    <div class="col-9">
+                                        <p class="text-dark mb-0 fw-semibold fs-14">Lists</p>
+                                        <h3 class="mt-2 mb-0 fw-bold">24</h3>
+                                    </div>
+                                    <!--end col-->
+                                    <div class="col-3 align-self-center">
+                                        <div class="d-flex justify-content-center align-items-center thumb-xl bg-light rounded-circle mx-auto">
+                                            <i class="iconoir-hexagon-dice h1 align-self-center mb-0 text-secondary"></i>
+                                        </div>
+                                    </div>
+                                    <!--end col-->
+                                </div>
+                                <!--end row-->
+                                <p class="mb-0 text-truncate text-muted mt-3"><span class="text-success">8.5%</span>
+                                    New lists Today</p>
+                            </div>
+                            <!--end card-body-->
+                        </div>
+                        <!--end card-->
+                    </div>
+                    <!--end col-->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row d-flex justify-content-center border-dashed-bottom pb-3">
+                                    <div class="col-9">
+                                        <p class="text-dark mb-0 fw-semibold fs-14">Total Dispatched</p>
+                                        <h3 class="mt-2 mb-0 fw-bold">18</h3>
+                                    </div>
+                                    <!--end col-->
+                                    <div class="col-3 align-self-center">
+                                        <div class="d-flex justify-content-center align-items-center thumb-xl bg-light rounded-circle mx-auto">
+                                            <i class="iconoir-clock h1 align-self-center mb-0 text-secondary"></i>
+                                        </div>
+                                    </div>
+                                    <!--end col-->
+                                </div>
+                                <!--end row-->
+                                <p class="mb-0 text-truncate text-muted mt-3"><span class="text-success">1.5%</span>
+                                    Weekly Dispatch</p>
+                            </div>
+                            <!--end card-body-->
+                        </div>
+                        <!--end card-->
+                    </div>
+                    <!--end col-->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row d-flex justify-content-center border-dashed-bottom pb-3">
+                                    <div class="col-9">
+                                        <p class="text-dark mb-0 fw-semibold fs-14">Dispatch Credit</p>
+                                        <h3 class="mt-2 mb-0 fw-bold">36</h3>
+                                    </div>
+                                    <!--end col-->
+                                    <div class="col-3 align-self-center">
+                                        <div class="d-flex justify-content-center align-items-center thumb-xl bg-light rounded-circle mx-auto">
+                                            <i class="iconoir-percentage-circle h1 align-self-center mb-0 text-secondary"></i>
+                                        </div>
+                                    </div>
+                                    <!--end col-->
+                                </div>
+                                <!--end row-->
+                                <p class="mb-0 text-truncate text-muted mt-3"><span class="text-danger">8%</span>
+                                    Weekly</p>
+                            </div>
+                            <!--end card-body-->
+                        </div>
+                        <!--end card-->
+                    </div>
+                    <!--end col-->
+                </div>
+                <!--end row-->
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <h4 class="card-title">Dispatch Overview</h4>
+                                    </div>
+                                    <!--end col-->
+                                    <div class="col-auto">
+                                        <div class="dropdown">
+                                            <a href="#" class="btn bt btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="icofont-calendar fs-5 me-1"></i>
+                                                This Year<i class="las la-angle-down ms-1"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-end">
+                                                <a class="dropdown-item" href="#">Today</a>
+                                                <a class="dropdown-item" href="#">Last Week</a>
+                                                <a class="dropdown-item" href="#">Last Month</a>
+                                                <a class="dropdown-item" href="#">This Year</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end col-->
+                                </div>
+                                <!--end row-->
+                            </div>
+                            <!--end card-header-->
+                            <div class="card-body pt-0">
+                                <div id="audience_overview" class="apex-charts"></div>
+                            </div>
+                            <!--end card-body-->
+                        </div>
+                        <!--end card-->
+                    </div>
+                    <!--end col-->
+                    <div class="col-lg-6">
+                        <div class="card card-h-100">
+                            <div class="card-header">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <h4 class="card-title">Recent Transaction</h4>
+                                    </div>
+                                    <!--end col-->
+                                </div>
+                                <!--end row-->
+                            </div>
+                            <!--end card-header-->
+                            <div class="card-body pt-0">
+                                <div class="table-responsive browser_users">
+                                    <table class="table mb-0">
+                                        <thead class="table-light">
+                                            <tr>
+                                                <th class="border-top-0">Date</th>
+                                                <th class="border-top-0">Currency</th>
+                                                <th class="border-top-0">Amount</th>
+                                                <th class="border-top-0">Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>2025-05-30</td>
+                                                <td>Espees </td>
+                                                <td>$120.00</td>
+                                                <td><span class="badge bg-success">Completed</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2025-05-29</td>
+                                                <td>USD </td>
+                                                <td>$45.50</td>
+                                                <td><span class="badge bg-warning">Pending</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2025-05-28</td>
+                                                <td> Espees</td>
+                                                <td>$310.20</td>
+                                                <td><span class="badge bg-danger">Failed</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <!--end table-->
+                                </div>
+                                <!--end /div-->
+                            </div>
+                            <!--end card-body-->
+                        </div>
+                        <!--end card-->
+                    </div>
+                    <!--end col-->
+                </div>
+                <!--end row-->
+
+                
+            </div><!-- container -->
+
+            <!--Start Rightbar-->
+            <!--Start Rightbar/offcanvas-->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="Appearance" aria-labelledby="AppearanceLabel">
+                <div class="offcanvas-header border-bottom justify-content-between">
+                  <h5 class="m-0 font-14" id="AppearanceLabel">Appearance</h5>
+                  <button type="button" class="btn-close text-reset p-0 m-0 align-self-center" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">  
+                    <h6>Account Settings</h6>
+                    <div class="p-2 text-start mt-3">
+                        <div class="form-check form-switch mb-2">
+                            <input class="form-check-input" type="checkbox" id="settings-switch1">
+                            <label class="form-check-label" for="settings-switch1">Auto updates</label>
+                        </div><!--end form-switch-->
+                        <div class="form-check form-switch mb-2">
+                            <input class="form-check-input" type="checkbox" id="settings-switch2" checked>
+                            <label class="form-check-label" for="settings-switch2">Location Permission</label>
+                        </div><!--end form-switch-->
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="settings-switch3">
+                            <label class="form-check-label" for="settings-switch3">Show offline Contacts</label>
+                        </div><!--end form-switch-->
+                    </div><!--end /div-->
+                    <h6>General Settings</h6>
+                    <div class="p-2 text-start mt-3">
+                        <div class="form-check form-switch mb-2">
+                            <input class="form-check-input" type="checkbox" id="settings-switch4">
+                            <label class="form-check-label" for="settings-switch4">Show me Online</label>
+                        </div><!--end form-switch-->
+                        <div class="form-check form-switch mb-2">
+                            <input class="form-check-input" type="checkbox" id="settings-switch5" checked>
+                            <label class="form-check-label" for="settings-switch5">Status visible to all</label>
+                        </div><!--end form-switch-->
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="settings-switch6">
+                            <label class="form-check-label" for="settings-switch6">Notifications Popup</label>
+                        </div><!--end form-switch-->
+                    </div><!--end /div-->               
+                </div><!--end offcanvas-body-->
+            </div>
+            <!--end Rightbar/offcanvas-->
+            <!--end Rightbar-->
+            <!--Start Footer-->
+            
+                             <div id="footer-placeholder"></div>
+
+    <script>
+    fetch('components/footer.html')
+        .then(res => res.text())
+        .then(html => {
+        document.getElementById('footer-placeholder').innerHTML = html;
+        });
+    </script>
+
+            <!--end footer-->
+        </div>
+        <!-- end page content -->
+    </div>
+    <!-- end page-wrapper -->
+
+    <!-- Javascript  -->
+    <!-- vendor js -->
+    
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+
+    <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/data/stock-prices.js"></script>
+    <script src="assets/libs/jsvectormap/js/jsvectormap.min.js"></script>
+    <script src="assets/libs/jsvectormap/maps/world.js"></script>
+    <script src="assets/js/pages/index.init.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+<!--end body-->
+
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-startbar="light" data-bs-theme="light">
+
+    <head>
+        
+
+        <meta charset="utf-8" />
+                <title>History | Kingslist </title>
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+                <meta content="" name="author" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+                <!-- App favicon -->
+                <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+       
+         <!-- App css -->
+         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+         <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+         <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    
+    <!-- Top Bar Start -->
+    <body>
+        <!-- Top Bar Start -->
+        <div id="topBar-placeholder"></div>
+
+    <script>
+    fetch('components/topbar.html')
+        .then(res => res.text())
+        .then(html => {
+        document.getElementById('topBar-placeholder').innerHTML = html;
+        });
+    </script>
+        <!-- Top Bar End -->
+        <!-- leftbar-tab-menu -->
+                 <div id="leftbar-placeholder"></div>
+
+    <script>
+    fetch('components/leftbar.html')
+        .then(res => res.text())
+        .then(html => {
+        document.getElementById('leftbar-placeholder').innerHTML = html;
+        });
+    </script>
+        <!-- end leftbar-tab-menu-->
+
+
+        <div class="page-wrapper">
+
+            <!-- Page Content-->
+            <div class="page-content">
+                <div class="container-xxl">
+                    <div class="row">                        
+                        <div class="col-md-12 col-lg-3">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="row align-items-center">
+                                        <div class="col">                      
+                                            <h4 class="card-title">Top Dispatch</h4>                      
+                                        </div><!--end col-->
+                                    </div>  <!--end row-->                                  
+                                </div><!--end card-header-->
+                                <div class="card-body pt-0">
+                                    <div class="d-flex align-items-center border-dashed-bottom py-3">
+                                        <div class="flex-grow-1 ms-2">
+                                            <h5 class="m-0">35,365</h5>
+                                            <p class="text-muted mb-0">Friends . Last Month
+                                                <span class="text-success">2.5% <i class="mdi mdi-arrow-up"></i></span>
+                                            </p>
+                                        </div><!--end media-body-->
+                                    </div><!--end media--> 
+                                    <div class="d-flex align-items-center border-dashed-bottom py-3">
+                                        <div class="flex-grow-1 ms-2">
+                                            <h5 class="m-0">24,865</h5>
+                                            <p class="text-muted mb-0">Partners . Last Month
+                                                <span class="text-success">1.2% <i class="mdi mdi-arrow-up"></i></span>
+                                            </p>
+                                        </div><!--end media-body-->
+                                    </div><!--end media-->  
+                                    <div class="d-flex align-items-center border-dashed-bottom py-3">
+                                        <div class="flex-grow-1 ms-2">
+                                            <h5 class="m-0">18,369</h5>
+                                            <p class="text-muted mb-0">Pastors . Last Month
+                                                <span class="text-success">0.8% <i class="mdi mdi-arrow-up"></i></span>
+                                            </p>
+                                        </div><!--end media-body-->
+                                    </div><!--end media-->
+                                    <div class="d-flex align-items-center pt-3">
+                                        <div class="flex-grow-1 ms-2">
+                                            <h5 class="m-0">11,325</h5>
+                                            <p class="text-muted mb-0">Grace . Last Month
+                                                <span class="text-success">2.5% <i class="mdi mdi-arrow-up"></i></span>
+                                            </p>
+                                        </div><!--end media-body-->
+                                    </div><!--end media--> 
+                                </div><!--end card-body--> 
+                            </div><!--end card-->                             
+                        </div> <!--end col--> 
+                        <div class="col-md-12 col-lg-9">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="row align-items-center">
+                                        <div class="col">                      
+                                            <h4 class="card-title">Metrics</h4>                      
+                                        </div><!--end col-->
+                                        <div class="col-auto"> 
+                                            <div class="dropdown">
+                                                <a href="#" class="btn bt btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="icofont-calendar fs-5 me-1"></i> This Year<i class="las la-angle-down ms-1"></i>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-end">
+                                                    <a class="dropdown-item" href="#">Today</a>
+                                                    <a class="dropdown-item" href="#">Last Week</a>
+                                                    <a class="dropdown-item" href="#">Last Month</a>
+                                                    <a class="dropdown-item" href="#">This Year</a>
+                                                </div>
+                                            </div>               
+                                        </div><!--end col-->
+                                    </div>  <!--end row-->                                  
+                                </div><!--end card-header-->
+                                <div class="card-body pt-0">
+                                    <div id="reports-bar" class="apex-charts pill-bar"></div>
+                                </div><!--end card-body--> 
+                            </div><!--end card-->                             
+                        </div> <!--end col-->           
+                    </div><!--end row-->  
+                    
+                   <div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="row align-items-center">
+                    <div class="col">                      
+                        <h4 class="card-title">Dispatched Messages</h4>                      
+                    </div>
+                </div>                                  
+            </div>
+            <div class="card-body pt-0">
+                <div class="table-responsive">
+
+                    <div class="p-3 border rounded bg-light mb-3">
+                        <div class="row align-items-center mb-2">
+                            <div class="col-md-6">
+                                <h5 class="mb-1">📦 Campaign: <strong>Campaign Test</strong></h5>
+                                <p class="mb-0 text-muted">🕒 Date: <span class="fw-semibold">2025-05-27 21:35:35</span></p>
+                            </div>
+                            <div class="col-md-6 text-md-end mt-3 mt-md-0">
+                                <span class="badge bg-success">Status: Dispatch Complete</span>
+                                <span class="badge bg-primary ms-2">Sent: 11</span>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap gap-2 mt-2">
+                            <a href="dispatch-log.html" class="btn btn-outline-primary">
+                                <i class="fa-solid fa-paper-plane me-1"></i> Continue Dispatch
+                            </a>
+                            <a href="dispatch-report.html" class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-chart-line me-1"></i> View Report
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>
+                                
+                </div><!-- container -->
+                
+                
+                <!--Start Footer-->
+                
+                 <div id="footer-placeholder"></div>
+
+    <script>
+    fetch('components/footer.html')
+        .then(res => res.text())
+        .then(html => {
+        document.getElementById('footer-placeholder').innerHTML = html;
+        });
+    </script>
+                
+                <!--end footer-->
+            </div>
+            <!-- end page content -->
+        </div>
+        <!-- end page-wrapper -->
+
+        <!-- Javascript  -->  
+        <!-- vendor js -->
+        
+        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/libs/simplebar/simplebar.min.js"></script>
+        <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+        <script src="assets/js/pages/analytics-reports.init.js"></script>
+        <script src="assets/js/app.js"></script>
+    </body>
+    <!--end body-->
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-startbar="light" data-bs-theme="light">
+
+    <head>
+        
+
+        <meta charset="utf-8" />
+                <title>Lists |   Kingslist</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+                <meta content="" name="author" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+                <!-- App favicon -->
+                <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+       
+        <link href="assets/libs/simple-datatables/style.css" rel="stylesheet" type="text/css" />
+         <!-- App css -->
+         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+         <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+         <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    
+    <!-- Top Bar Start -->
+    <body>
+        <!-- Top Bar Start -->
+        <div id="topBar-placeholder"></div>
+
+    <script>
+    fetch('components/topbar.html')
+        .then(res => res.text())
+        .then(html => {
+        document.getElementById('topBar-placeholder').innerHTML = html;
+        });
+    </script>
+
+        <!-- Top Bar End -->
+        <!-- leftbar-tab-menu -->
+         <div id="leftbar-placeholder"></div>
+
+    <script>
+    fetch('components/leftbar.html')
+        .then(res => res.text())
+        .then(html => {
+        document.getElementById('leftbar-placeholder').innerHTML = html;
+        });
+    </script>
+        <!-- end leftbar-tab-menu-->
+
+
+        <div class="page-wrapper">
+
+            <!-- Page Content-->
+            <div class="page-content">
+                <div class="container-xxl"> 
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="row align-items-center">
+                                        <div class="col">                      
+                                            <h4 class="card-title">Lists</h4>                      
+                                        </div><!--end col-->
+                                        <div class="col-auto"> 
+                                            <form class="row g-2">
+                                                <div class="col-auto">
+                                                    <a class="btn bg-primary-subtle text-primary dropdown-toggle d-flex align-items-center arrow-none" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false" data-bs-auto-close="outside">
+                                                        <i class="iconoir-filter-alt me-1"></i> Filter
+                                                    </a>
+                                                    <div class="dropdown-menu dropdown-menu-start">
+                                                        <div class="p-2">
+                                                            <div class="form-check mb-2">
+                                                                <input type="checkbox" class="form-check-input" checked id="filter-all">
+                                                                <label class="form-check-label" for="filter-all">
+                                                                  All 
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check mb-2">
+                                                                <input type="checkbox" class="form-check-input" checked id="filter-one">
+                                                                <label class="form-check-label" for="filter-one">
+                                                                    New
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check mb-2">
+                                                                <input type="checkbox" class="form-check-input" checked id="filter-two">
+                                                                <label class="form-check-label" for="filter-two">
+                                                                    Active
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input type="checkbox" class="form-check-input" checked id="filter-three">
+                                                                <label class="form-check-label" for="filter-three">
+                                                                    Inactive
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div><!--end col-->
+                                                
+                                                <div class="col-auto">
+                                                  <button type="button" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#addBoard"><i class="fa-solid fa-plus me-1"></i> Add List</button>
+                                                </div><!--end col-->
+                                            </form>    
+                                        </div><!--end col-->
+                                    </div><!--end row-->                                  
+                                </div><!--end card-header-->
+                                <div class="card-body pt-0">
+                                    
+                                    <div class="table-responsive">
+                                        <table class="table table-hover align-middle mb-0" id="datatable_1">
+  <thead class="table-light">
+    <tr>
+      <th style="width: 40px;">
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="select-all">
+        </div>
+      </th>
+      <th>Title</th>
+      <th>Recipients</th>
+      <th>View</th>
+      <th>Dispatch</th>
+      <th>Edit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="customCheck13">
+        </div>
+      </td>
+      <td>
+        <a href="#" class="text-body fw-medium">Wisdom</a>
+      </td>
+      <td>123</td>
+      <td>
+        <a href="view.html" class="btn btn-primary btn-sm">View</a>
+      </td>
+      <td>
+        <a href="dispatch.html" class="btn btn-info btn-sm">Dispatch</a>
+      </td>
+      <td>
+        <a href="edit.html" class="btn btn-warning btn-sm">Edit</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->                                     
+                </div><!-- container -->
+                
+                <!--Start Rightbar-->
+                <!--Start Rightbar/offcanvas-->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="Appearance" aria-labelledby="AppearanceLabel">
+                    <div class="offcanvas-header border-bottom justify-content-between">
+                      <h5 class="m-0 font-14" id="AppearanceLabel">Appearance</h5>
+                      <button type="button" class="btn-close text-reset p-0 m-0 align-self-center" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">  
+                        <h6>Account Settings</h6>
+                        <div class="p-2 text-start mt-3">
+                            <div class="form-check form-switch mb-2">
+                                <input class="form-check-input" type="checkbox" id="settings-switch1">
+                                <label class="form-check-label" for="settings-switch1">Auto updates</label>
+                            </div><!--end form-switch-->
+                            <div class="form-check form-switch mb-2">
+                                <input class="form-check-input" type="checkbox" id="settings-switch2" checked>
+                                <label class="form-check-label" for="settings-switch2">Location Permission</label>
+                            </div><!--end form-switch-->
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="settings-switch3">
+                                <label class="form-check-label" for="settings-switch3">Show offline Contacts</label>
+                            </div><!--end form-switch-->
+                        </div><!--end /div-->
+                        <h6>General Settings</h6>
+                        <div class="p-2 text-start mt-3">
+                            <div class="form-check form-switch mb-2">
+                                <input class="form-check-input" type="checkbox" id="settings-switch4">
+                                <label class="form-check-label" for="settings-switch4">Show me Online</label>
+                            </div><!--end form-switch-->
+                            <div class="form-check form-switch mb-2">
+                                <input class="form-check-input" type="checkbox" id="settings-switch5" checked>
+                                <label class="form-check-label" for="settings-switch5">Status visible to all</label>
+                            </div><!--end form-switch-->
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="settings-switch6">
+                                <label class="form-check-label" for="settings-switch6">Notifications Popup</label>
+                            </div><!--end form-switch-->
+                        </div><!--end /div-->               
+                    </div><!--end offcanvas-body-->
+                </div>
+                <!--end Rightbar/offcanvas-->
+                <!--end Rightbar-->
+                <!--Start Footer-->
+                
+                 <div id="footer-placeholder"></div>
+
+    <script>
+    fetch('components/footer.html')
+        .then(res => res.text())
+        .then(html => {
+        document.getElementById('footer-placeholder').innerHTML = html;
+        });
+    </script>
+                
+                <!--end footer-->
+            </div>
+            <!-- end page content -->
+             <div class="modal fade" id="addBoard" tabindex="-1" aria-labelledby="addBoardLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+    
+      <div class="modal-header">
+        <h5 class="modal-title" id="addBoardLabel">Add New List</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      
+      <div class="modal-body">
+        <p class="mb-3">Provide the title and description for the new list you want to create.</p>
+        
+        <form id="addListForm">
+          <div class="mb-3">
+            <label for="listTitle" class="form-label">Title</label>
+            <input type="text" class="form-control" id="listTitle" placeholder="Enter list title" required>
+          </div>
+          <div class="mb-3">
+            <label for="listDescription" class="form-label">Description</label>
+            <textarea class="form-control" id="listDescription" rows="3" placeholder="Enter description"></textarea>
+          </div>
+        </form>
+      </div>
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button type="submit" form="addListForm" class="btn btn-primary">Save</button>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+        </div>
+        <!-- end page-wrapper -->
+
+        <!-- Javascript  -->  
+        <!-- vendor js -->
+        
+        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/libs/simplebar/simplebar.min.js"></script>
+        <script src="assets/libs/simple-datatables/umd/simple-datatables.js"></script>
+        <script src="assets/js/pages/datatable.init.js"></script>
+        <script src="assets/js/app.js"></script>
+    </body>
+    <!--end body-->
+</html>
